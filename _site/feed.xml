@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>The Human Byte</title>
+		<description>256 binary thoughts</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Javascript testing with Rails and QUnit</title>
+				<description>&lt;p&gt;Testing a Rails backend is considerably easier than that of its ugly frontend javascript brother. When looking
+for a solution to frontend testing solution, I usually look for the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Easily runnable&lt;/li&gt;
+&lt;li&gt;Simple configuration&lt;/li&gt;
+&lt;li&gt;CI friendly (TravisCI would be nice)&lt;/li&gt;
+&lt;li&gt;Rails asset loading&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;And some bonuses:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Multiple browser testing support&lt;/li&gt;
+&lt;li&gt;Code coverage reports&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Finding all these that played nicely was extremely difficult. Initially, I settled on using the
+&lt;code&gt;rails-qunit&lt;/code&gt; gem. This does quite a nice job for a little while. There is a nice generator
+included making for an easy setup. Simply fire up the rails server and hit &lt;code&gt;/qunit&lt;/code&gt; and you're
+tests will run.&lt;/p&gt;
+
+&lt;p&gt;However, I desperately wanted these tests to be part of my Travis build. Especially with the rise of single
+page applications (SPA), the javascript quickly became the most important of my app to test. Now let me
+introduce you to a wonderful gem called &lt;code&gt;teaspoon&lt;/code&gt;. Teaspoon comes with support with Jasmine, Mocha
+and QUnit. It's an amazing little testing library.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</description>
+				<pubDate>Sun, 22 Dec 2013 00:00:00 +0100</pubDate>
+				<link>/software/2013/12/22/rails-qunit.html</link>
+				<guid isPermaLink="true">/software/2013/12/22/rails-qunit.html</guid>
+			</item>
+		
+	</channel>
+</rss>
